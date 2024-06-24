@@ -6,14 +6,15 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans  
                 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
  
-   
-   <bean id="id1" class="beans.Car" autowire="no">
+   <bean id="emp" class="beans.Employee">
+      <property name="eid" value="111"/>
+      <property name="ename" value="Yogesh"/>
+      
    </bean>
    
-   <bean id="engine" class="beans.Engine" autowire="byName">
-  </bean>
-   
-   <bean id="f" class="beans.Fuel"/>
-     
-   
+   <bean id="stu" class ="beans.Student">
+     <constructor-arg  value="1" type="int"/>
+     <constructor-arg  value="Akhilesh" type="String"/>
+   </bean>
+ 
  </beans>   
